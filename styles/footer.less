@@ -1,0 +1,46 @@
+/**
+ * @file plugins/themes/defaultMakunaima/styles/footer.less
+ *
+ * Copyright (c) 2014-2021 Simon Fraser University
+ * Copyright (c) 2003-2021 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief Classes for the page footer elements
+ */
+
+.pkp_structure_footer_wrapper {
+	/*background: @bg-shade;*/
+	color: white;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	a:hover{
+		color: yellow;
+	}
+	background-color: @bg-base;
+	border-bottom: @bg-border;
+	background-image: url('/public/journals/2/background-portal-makunaima.png');
+	background-size: auto;
+}
+
+.pkp_structure_footer {
+	text-align: center;
+}
+
+.pkp_footer_content {
+	padding: @triple;
+	text-align: left;
+}
+
+// OJS brand images in footer
+.pkp_brand_footer {
+	.pkp_helpers_clear();
+	padding: @triple;
+
+	a {
+		float: right;
+		display: block;
+		max-width: 150px;
+	}
+}
